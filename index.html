@@ -11,16 +11,49 @@
 <body>
     
     <div class="container mt-5">
-        <button onclick="createTask()" type="button" class="btn btn-primary ">Subir Producto</button>
-        <div class="row " id="task-container">
-            <!-- Aqui van las tareas -->
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <form onsubmit="event.preventDefault(), updateInformation()">
+                    <div class="form-group">
+                      <label for="exampleInputEmail1">Name Product</label>
+                      <input type="text" class="form-control" id="name" placeholder="Enter name">
+                    </div>
+                    <div class="form-group">
+                      <label for="exampleInputPassword1">Price</label>
+                      <input type="number" class="form-control" id="price" placeholder="Enter price">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">Url Image</label>
+                        <input type="url" class="form-control" id="image" placeholder="Enter url image">
+                      </div>
+                    <div class="form-check">
+                    </div>
+                    <button  type="submit" class="btn btn-success">Edit Information</button>
+                  </form>
+                    </div>
                 </div>
-               </div>
+                
+                      
+              <div class="card-body">
+                
+                  </div>
+                 </div>
+                 <div class="mt-5">
+                    <button onclick="createTask()" type="button" class="btn btn-primary ">Subir un Producto</button>  
+                 </div>
+                 <div class="row " id="task-container">
+                     <!-- Aqui van las tareas -->
+                         </div>
+                        </div>
+                        <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script> 
+                        <script src="./assets/js.js"></script>
+                        <script src="https://kit.fontawesome.com/16fbe5791b.js" crossorigin="anonymous"></script>
+                     </body>
+                     </html>  
+       
                
-              <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script> 
-              <script src="./assets/js.js"></script>
-           </body>
-           </html>  
 
             
                         
