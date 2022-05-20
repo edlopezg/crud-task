@@ -45,17 +45,17 @@ axios.get('https://e-commerce-api-academlo.herokuapp.com/api/products')
 // Con esta funcion Creamos las tareas 
 function createTask (){
     const newProduct = {
-        id: 'nuevo producto',
-        name: 'nombre del producto',
-        image: 'url'
-    }
-    axios.post('https://e-commerce-api-academlo.herokuapp.com/api/products')
-    .then(function (response) {
-         alert('Tu producto se subio correctamente')
-        console.log(response);
-       
+       name: "Nuevo Producto",
+       price: 12345,
+       image: "https://www.academlo.com/img/home/estudiando-programacion-min.png"
+      
         
-    })
+    }
+    axios.post('https://e-commerce-api-academlo.herokuapp.com/api/products', newProduct)
+    .then(function (response) {
+         alert('Tu producto se subio correctamente');
+        console.log(response);
+         })
 .catch(function (error){
         alert('Tu producto no pudo ser creado')
         console.log(error);
